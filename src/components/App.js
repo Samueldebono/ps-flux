@@ -7,7 +7,7 @@ import Header from "./common/Header";
 import NotFoundPage from "./NotFoundPage";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/react-toastify.esm";
+import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
 	return (

@@ -6,6 +6,7 @@ function TextInput(props) {
 	if (props.error.length > 0) {
 		wrapperClass += " has-error";
 	}
+
 	return (
 		<div className={wrapperClass}>
 			<label htmlFor={props.id}>{props.label}</label>
@@ -13,8 +14,8 @@ function TextInput(props) {
 				<input
 					id={props.id}
 					type="text"
-					name={props.name}
 					onChange={props.onChange}
+					name={props.name}
 					className="form-control"
 					value={props.value}
 				/>
@@ -26,8 +27,8 @@ function TextInput(props) {
 
 TextInput.propTypes = {
 	id: PropTypes.string.isRequired,
-	label: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
+	label: PropTypes.string.isRequired,
 	onChange: PropTypes.func.isRequired,
 	value: PropTypes.string,
 	error: PropTypes.string,
